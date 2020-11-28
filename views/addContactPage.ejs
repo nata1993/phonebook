@@ -1,0 +1,15 @@
+<%- include('partials/header.ejs') %>
+<%- include('partials/nav.ejs') %>
+
+<h1> Phonebook </h1>
+<form action="/addPhoneNumber" method="POST">
+    <label for="phoneNumberCarrier">Nimi:</label><br>
+        <input type="text" name="phoneNumberCarrier" placeholder="Bogdan Parubok" required>
+    <br>
+    <label for="phoneNumber">Number:</label><br>
+        <input type="tel" name="phoneNumber" placeholder="567979937" pattern="[0-9]{3}[0-9]{2}[0-9]{3}"required>
+    <br>
+    <input type="submit" value="Lisa!">
+</form>
+
+<%- include('partials/footer.ejs') %>
